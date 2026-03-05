@@ -1,2 +1,3 @@
 # todo-app-collaboration
-Trần Thái Minh Huy - minhuiiy
+// Họ và tên: Nguyễn Tấn Sang
+// MSSV: 2280602715
