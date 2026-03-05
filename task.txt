@@ -1,2 +1,2 @@
-Add task feature
-User can create a task
+User can edit task
+User can delete task
