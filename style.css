@@ -91,3 +91,24 @@ li:last-child {
 .delete-btn:hover {
     background-color: #c82333;
 }
+
+
+.completed .task-text {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.done-btn {
+    background-color: #28a745;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.done-btn:hover {
+    background-color: #218838;
+}
