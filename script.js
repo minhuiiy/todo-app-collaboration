@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-
+    
+    const filterInput = document.getElementById('filter-input');
     const taskInput = document.getElementById('task-input');
     const addBtn = document.getElementById('add-btn');
     const taskList = document.getElementById('task-list');
@@ -87,6 +88,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     addBtn.addEventListener('click', addTask);
 
+    filterInput.addEventListener('keyup', () => {
+
+    const filterValue = filterInput.value.toLowerCase();
+    const tasks = taskList.getElementsByTagName('li');
+
+    Array.from(tasks).forEach(task => {
+
+        const text = task.textContent.toLowerCase();
+
+        if (text.includes(filterValue)) {
+            task.style.display = '';
+        } else {
+            task.style.display = 'none';
+        }
+
+    });
+
+});
     taskInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') {
             addTask();
