@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const addBtn = document.getElementById('add-btn');
     const taskList = document.getElementById('task-list');
 
-    // Thêm công việc
+    // Thêm công việc,,,,
     function addTask() {
 
         const taskText = taskInput.value.trim();
